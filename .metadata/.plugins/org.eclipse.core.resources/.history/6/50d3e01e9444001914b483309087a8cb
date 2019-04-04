@@ -1,0 +1,20 @@
+package shubham.java;
+
+import java.util.Scanner;
+
+public class BinarySearch {
+	public static int binarySearch() {
+		
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int arr[]= {10,52,64,75,35,95,24,16};
+		int ele = 0;
+		System.out.println("Enter a Search number");
+		ele = sc.nextInt();
+		
+	}
+
+}

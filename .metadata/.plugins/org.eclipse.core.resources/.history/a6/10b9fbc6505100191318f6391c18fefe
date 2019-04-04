@@ -1,0 +1,8 @@
+package com.bridge.Hash;
+
+public class Hashing {
+	Object[] arr ;
+	public Hashing() {
+		arr = new Object[10];
+	}
+}

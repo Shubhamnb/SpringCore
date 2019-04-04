@@ -1,0 +1,63 @@
+package shubham.java;
+
+import java.util.Scanner;
+
+public class First1000PrimeNumber {
+
+	public static void main(String[] args) {
+		
+		
+			int count=0;
+			int i=2;
+			int arr[] = new int[168];
+			int k=0;
+			int m1 = 1, m2 = 1;
+			int key1 = 0, key2 = 0;
+			
+			System.out.println("Shubham");
+			
+			while(i < 1000) {
+				if(i==2) {
+					count++;
+					System.out.print (i+" ");
+					i++;
+					continue;
+					
+					
+				}
+				for(int j=2;j<i;j++) {
+					if(i%j == 0) {
+						break;
+					}
+					if(j == (i-1)) {
+						arr[k] = i;
+						System.out.print(i+" ");
+						count++;
+						k++;
+					}
+				}
+				
+				i++;
+			}
+			System.out.println();
+		
+		  for (int j : arr) { System.out.print(" "+j); }
+		 System.out.println();
+			for (int j = 0; j < arr.length; j++) {
+				for (int l = j+1; l < arr.length; l++) {
+					key1 = arr[j];
+					key2 = arr[l];
+					while(key1 > 0 && key2 > 0) {
+						m1 = m1 * (key1 % 10);
+						m2 = m2 * (key2 % 10);
+						key1 = key1 / 10;
+						key2 = key2 / 10;
+					}
+					if(m1 == m2) {
+						System.out.print(arr[j]+" "+arr[k]+" is anagram prime number");
+					}
+				}
+			}
+	}
+
+}

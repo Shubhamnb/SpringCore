@@ -1,0 +1,48 @@
+package com.bridge.LinkedList;
+
+
+
+public class LinkedList {
+	Node head;
+	
+	public void add(String str) {
+		Node node = new Node(str, null);
+		if(head == null) {
+			head = node;
+		}else {
+			node.next = head;
+			head = node;
+		}
+	}
+	public boolean search(String str) {
+		Node temp = head;
+		do {
+			if(temp.data.equalsIgnoreCase(str)) {
+				return true;
+			}
+			temp = temp.next;
+		}while(temp.next != null);
+		if(temp.data.equalsIgnoreCase(str)) {
+			return true;
+		}
+		return false;
+	}
+	public void show() {
+		if(head == null) {
+			System.out.println("List is empty ");
+		}else {
+			Node temp;
+			temp = head;
+			while(temp.next != null) {
+				System.out.print(temp.data+" ");
+				temp = temp.next;
+			}
+			System.out.println(temp.data);
+		}
+	}
+	
+	
+	
+	
+	
+}

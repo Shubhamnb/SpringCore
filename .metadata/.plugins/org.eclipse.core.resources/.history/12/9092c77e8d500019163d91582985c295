@@ -1,0 +1,9 @@
+package com.bridge.CashCounter;
+
+public class Person {
+	String name;
+	
+	public int withDraw() {
+		return 1;
+	}
+}

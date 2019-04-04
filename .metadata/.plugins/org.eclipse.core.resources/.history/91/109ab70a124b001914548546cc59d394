@@ -1,0 +1,43 @@
+package shubham.java;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class VendingMachine {
+	
+	public static void machinVending(int n) {
+		Map map = new HashMap();
+		int arr[] = {1000, 500, 100, 50, 10, 5, 2, 1};
+		/*
+		 * if(n > 1000) { map.put(1000, n/1000); n = n % 1000; } else if (n > 500 && n <
+		 * 1000) { map.put(500, n/500); n = n - 500 * (n/500); } else if (n < 500 && n >
+		 * 100) { map.put(100, n/100); n = n % 100; } else if (n < 100 && n > 50) {
+		 * map.put(50, n/50); n = n - 50 * (n/50); } else if (n < 50 && n > 10) {
+		 * map.put(10, n/10); n = n % 10; }
+		 */
+		System.out.println(550/1000);
+		int i = 0;
+		while(i < arr.length) {
+			if(n % arr[i] > 0) {
+				map.put(arr[i], n/arr[i]);
+				n = n % arr[i];
+			}
+			i++;
+		}
+		System.out.println(map);
+	}
+   public static void main(String[] args) {
+	   Scanner sc = new Scanner(System.in);
+	   int num = 0;
+	   try {
+		System.out.println("Enter the number");
+		num = sc.nextInt();
+		machinVending(num);
+	} catch (Exception e) {
+		System.out.println("Wrong Input");
+		e.printStackTrace();
+		System.exit(0);
+	}
+   }
+}

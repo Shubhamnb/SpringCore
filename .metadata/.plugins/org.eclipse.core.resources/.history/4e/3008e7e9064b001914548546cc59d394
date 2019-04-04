@@ -1,0 +1,17 @@
+package shubham.java;
+
+import java.util.Scanner;
+
+public class VendingMachine {
+   public static void main(String[] args) {
+	   Scanner sc = new Scanner(System.in);
+	   int num = 0;
+	   try {
+		System.out.println("Enter the number");
+		num = sc.nextInt();
+	} catch (Exception e) {
+		System.out.println("Wrong Input");
+		System.exit(0);
+	}
+   }
+}

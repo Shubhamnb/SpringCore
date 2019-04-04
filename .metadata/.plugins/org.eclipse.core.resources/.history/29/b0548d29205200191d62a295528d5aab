@@ -1,0 +1,24 @@
+package com.bridge.BinarySearchTree;
+
+public class BinarySearchTree {
+	Node root;
+	Node node;
+	public Node add(int num) {
+		 
+		if(root == null) {
+			node = new Node(num, null, null);
+			root = node;
+		}else {
+			Node temp = root;
+			if(temp.data < num) {
+				root = temp.next;   
+			}else {
+				root = temp.prev;
+			}
+		}
+	}
+
+	
+	
+	
+}

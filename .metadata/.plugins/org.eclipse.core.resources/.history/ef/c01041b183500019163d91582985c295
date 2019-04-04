@@ -1,0 +1,14 @@
+package com.bridge.CashCounter;
+
+public class BankTransaction {
+	
+	int balance;
+	
+	public static void bankDisplay() {
+		System.out.println("Welcom to Bank");
+		System.out.println("1. Deposite");
+		System.out.println("2. WithDraw");
+		System.out.println("3. ViewBalance");
+		System.out.print("Press 1|2|3 :");
+	}
+}

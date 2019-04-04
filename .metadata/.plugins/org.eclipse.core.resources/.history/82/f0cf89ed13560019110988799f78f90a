@@ -1,0 +1,67 @@
+package com.bridge.JSON;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+public class JSONInventeryManagement {
+	public static void main(String[] args){
+		JSONParser parser = new JSONParser();
+		try {
+			Object obj = parser.parse(new FileReader("JsonFile.json"));
+			Map map = new HashMap();
+			
+			JSONObject json = (JSONObject)obj;
+			/*Object rice =  json.get("rice");
+			System.out.println("Name is :"+rice);
+			
+			Object pulses =  json.get("pulses");
+			System.out.println("Name is :"+pulses);
+			
+			Object wheat =  json.get("wheats");
+			System.out.println("Name is :"+wheat);
+			
+			*/
+			
+			//LoopArray for RiceInventary
+			JSONArray riceArray = (JSONArray)json.get("rice");
+			
+			Iterator it = riceArray.iterator();
+			System.out.println("Rice : [");
+			while(it.hasNext()) {
+				System.out.println("	"+it.next());
+			}
+			System.out.println("	]");
+			
+			
+			
+			
+			//LoopArray for RiceInventary
+			JSONArray pulsesArray = (JSONArray)json.get("pulses");
+			
+			it = pulsesArray.iterator();
+			System.out.println("Pulses : [");
+			while(it.hasNext()) {
+				System.out.println("	"+it.next());
+			}
+			System.out.println("	]");
+		}
+		catch (FileNotFoundException fne) {
+			fne.printStackTrace();
+		}catch (IOException ioe) {
+			ioe.printStackTrace();
+		}catch ( ParseException pe ) {
+			pe.printStackTrace();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

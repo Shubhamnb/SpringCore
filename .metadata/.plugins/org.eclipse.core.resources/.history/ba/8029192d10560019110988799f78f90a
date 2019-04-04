@@ -1,0 +1,12 @@
+package com.bridge.JSON;
+
+import java.io.FileReader;
+
+import org.json.simple.parser.JSONParser;
+
+public class JSONInventeryManagement {
+	public static void main(String[] args){
+		JSONParser parser = new JSONParser();
+		Object obj = parser.parse(new FileReader("JsonFile.json"));
+	}
+}

@@ -1,0 +1,37 @@
+package shubham.java;
+
+
+import java.util.Scanner;
+
+
+public class BinarySearch {
+	public static int binarySearch(int arr[],int ele) {
+		
+		//Sort the Array
+		for(int i=0;i<arr.length;i++) {
+			for(int j=i+1;j<(arr.length-1);j++) {
+				if(arr[j]>arr[j+1]) {
+					int temp;
+					temp=arr[j];
+					arr[j]=arr[j+1];
+					arr[j+1]=temp;
+				}
+			}
+		}
+		
+		System.out.println(arr);
+		
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int arr[]= {10,52,64,75,35,95,24,16};
+		int ele = 0;
+		System.out.println("Enter a Search number");
+		ele = sc.nextInt();
+		int result = binarySearch(arr,ele);
+		
+	}
+
+}

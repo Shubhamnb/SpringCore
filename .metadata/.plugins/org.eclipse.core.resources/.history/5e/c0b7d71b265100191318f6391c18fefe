@@ -1,0 +1,14 @@
+package com.bridge.CashCounter;
+
+public class Person {
+	String name;
+	int balance;
+	
+	public void balanceChange(int amount) {
+		balance = balance + amount;
+	}
+	public Person(String name, Person balance) {
+		this.name = name;
+		this.balance = balance;
+	}
+}

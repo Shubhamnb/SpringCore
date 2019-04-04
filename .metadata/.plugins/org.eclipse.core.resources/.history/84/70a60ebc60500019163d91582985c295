@@ -1,0 +1,36 @@
+package com.bridge.BalancedParantheses;
+
+import java.util.ArrayList;
+
+public class Stack {
+	char[] ch;
+	int top, size, l;
+	
+	public Stack(int n) {
+		 top = -1;
+		 size = 0;
+		 l = n;
+		 ch = new char[l];
+	}
+	
+	/******Method to check Stack is empty or not*******/
+	public boolean isEmpty() {
+		return size == 0;
+	}
+	/******Method to check Stack is Full or not*******/
+	public boolean isFull() {
+		return size == l;
+	}
+	/******Methode to push element in Stack***********/
+	public void push(char chr) {
+		if(isFull())
+			throw new IllegalStateException("Stack Over_Flow");
+		ch[++top] = chr;
+	}
+	/******Methode to pop element in Stack***********/
+	public void pop(char chr) {
+		if(isEmpty())
+			throw new IllegalStateException("");
+		top--;
+	}
+}

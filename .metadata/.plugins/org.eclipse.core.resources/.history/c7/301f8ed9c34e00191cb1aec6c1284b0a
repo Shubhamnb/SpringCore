@@ -1,0 +1,13 @@
+package com.bridge.ToBinary;
+
+public class ToBinary {
+	public static char[] toBinary() {
+		return null;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

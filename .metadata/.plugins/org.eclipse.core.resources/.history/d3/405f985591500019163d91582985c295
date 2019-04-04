@@ -1,0 +1,12 @@
+package com.bridge.CashCounter;
+
+public class Queue {
+	Person pers[];
+	int front, rear, size;
+	
+	public Queue(int n) {
+		pers = new Person[n];
+		front = rear = 0;
+		size = 0;
+	}
+}

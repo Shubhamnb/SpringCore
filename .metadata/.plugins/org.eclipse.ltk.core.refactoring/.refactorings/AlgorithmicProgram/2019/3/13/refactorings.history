@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Utility.java&apos; to &apos;DataStructure&apos;&#x0A;- Original project: &apos;AlgorithmicProgram&apos;&#x0A;- Destination element: &apos;DataStructure&apos;&#x0A;- Original element: &apos;com.bridge.utility.Utility.java&apos;" description="Copy compilation unit" destination="=DataStructure" element1="/src&lt;com.bridge.utility{Utility.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1553580033314" units="1" version="1.0"/>
+</session>

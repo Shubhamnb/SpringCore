@@ -1,0 +1,7 @@
+package com.bridge.dayOfWeek;
+
+public class DayOfWeek {
+	public static void dayOfWeek() {
+		
+	}
+}

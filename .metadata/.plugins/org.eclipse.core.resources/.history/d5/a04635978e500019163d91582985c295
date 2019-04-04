@@ -1,0 +1,7 @@
+package com.bridge.CashCounter;
+
+public class Person {
+	String name;
+	
+	
+}

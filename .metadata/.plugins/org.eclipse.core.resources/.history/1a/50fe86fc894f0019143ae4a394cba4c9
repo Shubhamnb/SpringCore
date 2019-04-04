@@ -1,0 +1,67 @@
+package com.bridge.LinkedList1;
+
+import com.bridge.LinkedList1.Node;
+
+public class LinkedList1 {
+	
+	Node head;
+	Node p1,p2;
+	
+	
+	
+	   void add(int data) {
+		Node node = new Node(data, null);
+		
+		if(head == null) {
+			head = node;
+		}
+		else {
+			if(head.next == null) {
+				if(head.data > node.data) {
+					node.next = head;
+					head = node;
+				}
+				else {
+					head.next = node;
+				}
+			}
+			else {
+				
+				p1 = head;
+				p2 = p1.next; 
+				while(p1.next != null){
+					System.out.println("shubham");
+					if(p1.data < node.data && p2.data > node.data) {
+						node.next = p1.next;
+						p1.next = node;
+					}
+					if(p2.next == null && p2.data < node.data) {
+						p2.next = node;
+					}
+					
+					p1 = p2;
+					p2 = p1.next;
+				}
+			}
+		}
+		
+	}
+	
+	
+	   void show() {
+		if(head == null) {
+			System.out.println("List is empty ");
+		}else {
+			Node temp;
+			temp = head;
+			while(temp.next != null) {
+				System.out.print(temp.data+" ");
+				temp = temp.next;
+			}
+			System.out.println(temp.data);
+		}
+	}
+	
+	
+	
+}

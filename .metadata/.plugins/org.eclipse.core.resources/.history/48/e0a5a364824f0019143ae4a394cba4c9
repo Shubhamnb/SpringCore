@@ -1,0 +1,94 @@
+package com.bridge.LinkedList;
+
+import com.bridge.LinkedList1.Node1;
+
+public class LinkedList {
+	Node head;
+	Node1 head1;
+	Node1 p1,p2;
+	public void add(String str) {
+		Node node = new Node(str, null);
+		if(head == null) {
+			head = node;
+		}else {
+			node.next = head;
+			head = node;
+		}
+	}
+	public boolean search(String str) {
+		Node1 temp = head1;
+		do {
+			if(temp.data == str) {
+				
+			}
+		}while(temp != null);
+		return true;
+	}
+	public void show() {
+		if(head == null) {
+			System.out.println("List is empty ");
+		}else {
+			Node temp;
+			temp = head;
+			while(temp.next != null) {
+				System.out.print(temp.data+" ");
+				temp = temp.next;
+			}
+			System.out.println(temp.data);
+		}
+	}
+	
+	
+	public void add(int data) {
+		Node1 node1 = new Node1(data, null);
+		
+		if(head1 == null) {
+			head1 = node1;
+		}
+		else {
+			if(head1.next == null) {
+				if(head1.data > node1.data) {
+					node1.next = head1;
+					head1 = node1;
+				}
+				else {
+					head1.next = node1;
+				}
+			}
+			else {
+				
+				p1 = head1;
+				p2 = p1.next; 
+				while(p1.next != null){
+					System.out.println("shubham");
+					if(p1.data < node1.data && p2.data > node1.data) {
+						node1.next = p1.next;
+						p1.next = node1;
+					}
+					
+					p1 = p2;
+					p2 = p1.next;
+				}
+			}
+		}
+		
+	}
+	
+	
+	public void show1() {
+		if(head1 == null) {
+			System.out.println("List is empty ");
+		}else {
+			Node1 temp;
+			temp = head1;
+			while(temp.next != null) {
+				System.out.print(temp.data+" ");
+				temp = temp.next;
+			}
+			System.out.println(temp.data);
+		}
+	}
+	
+	
+	
+}

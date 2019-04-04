@@ -1,0 +1,31 @@
+package com.bridge.BalancedParantheses;
+
+import java.util.ArrayList;
+
+public class Stack {
+	char[] ch;
+	int top;
+	int size;
+	int l;
+	public Stack(int n) {
+		 top = -1;
+		 size = 0;
+		 l = n;
+		 ch = new char[l];
+	}
+	
+	/******Method to check Stack is empty or not*******/
+	public boolean isEmpty() {
+		return size == 0;
+	}
+	/******Method to check Stack is Full or not*******/
+	public boolean isFull() {
+		return size == ch.length-1;
+	}
+	public void push() {
+		top++;
+	}
+	public void pop() {
+		top--;
+	}
+}

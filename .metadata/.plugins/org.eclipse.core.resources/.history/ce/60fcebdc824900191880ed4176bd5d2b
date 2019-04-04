@@ -1,0 +1,30 @@
+package shubham.java;
+
+
+public class RafeWork {
+
+	public static void main(String[] args) {
+		int ar[] = {11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139 };
+		int key1 = 0, key2 = 0;
+		int m1 = 1, m2 = 1;
+		for (int i = 0; i < ar.length; i++) {
+			key1 = ar[i];
+			for (int j = 0; j < ar.length; j++) {
+				key2 = ar[j];
+				while (key1 != 0 && key2 != 0) {
+					m1 = m1 * key1 % 10;
+					key1 = key1 / 10;
+					m2 = m2 * key2 % 10;
+					key2 = key2 / 10;
+				}
+				if(m1 == m2) {
+					System.out.println(ar[i]+" "+ar[j]);
+					m1 = m2 = 0;
+					break;
+				}
+				m1 = m2 = 0;
+			}
+		}
+	}
+
+}

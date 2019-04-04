@@ -1,0 +1,38 @@
+package com.bridge.JSON;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+public class JSONInventeryManagement {
+	public static void main(String[] args){
+		JSONParser parser = new JSONParser();
+		try {
+			Object obj = parser.parse(new FileReader("JsonFile.json"));
+			
+			
+			JSONObject json = (JSONObject)obj;
+			Object rice =  json.get("rice");
+			System.out.println("Name is :"+rice);
+			
+			Object pulses =  json.get("pulses");
+			System.out.println("Name is :"+pulses);
+			
+			Object wheat =  json.get("wheats");
+			System.out.println("Name is :"+wheat);
+		}
+		catch (FileNotFoundException fne) {
+			fne.printStackTrace();
+		}catch (IOException ioe) {
+			ioe.printStackTrace();
+		}catch ( ParseException pe ) {
+			pe.printStackTrace();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

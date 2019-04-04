@@ -1,0 +1,42 @@
+package com.bridge.Array;
+
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class Array2D {
+	//To print @2d Array
+	public static void print(int arr[][], int row, int col) {
+		System.out.println("Your Array is ");
+		for (int i = 0; i < row; i++) {
+			for (int j = 0; j < col; j++) {
+				System.out.print(arr[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int row =0,col = 0;
+		
+		
+		try {
+			System.out.print("Enter num of row's and coloumn's :");
+			row = sc.nextInt();
+			col = sc.nextInt();
+			int [][]arr = new int[row][col];
+			System.out.println("Enter Array elements "+row+" by "+col+" :");
+			for (int i = 0; i < row; i++) {
+				for (int j = 0; j < col; j++) {
+					arr[i][j] = sc.nextInt();
+				}
+			}
+			print(arr,row,col);
+		}catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Wrong Input");
+			System.exit(0);
+		}
+		
+	}
+
+}

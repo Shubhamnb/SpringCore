@@ -1,0 +1,12 @@
+package com.bridge.prime;
+
+public class PrimeAnagram {
+
+	public static void isAnagrame(int[][] ar) {
+		
+		for (int i = 0; i < ar.length; i++) {
+			
+		}
+	}
+
+}

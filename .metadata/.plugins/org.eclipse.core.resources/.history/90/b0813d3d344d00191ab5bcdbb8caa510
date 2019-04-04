@@ -1,0 +1,21 @@
+package com.bridge.FeraniteCelsius;
+
+import java.util.Scanner;
+
+public class TemperaturConversion {
+
+	public int  temperaturConversion() {
+		return 0;
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		try {
+			System.out.println("Enter a Tempretur in Celsius to Fahrenheit");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+}

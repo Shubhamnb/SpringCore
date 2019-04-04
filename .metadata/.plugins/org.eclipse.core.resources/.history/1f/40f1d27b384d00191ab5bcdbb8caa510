@@ -1,0 +1,41 @@
+package com.bridge.FeraniteCelsius;
+
+import java.util.Scanner;
+
+public class TemperaturConversion {
+
+	public static int  temperaturConversion(String str) {
+		if(str.charAt(str.length()-1) == 'c' || str.charAt(str.length()-1) == 'C') {
+			celsius = Integer.parseInt(str.substring(0,str.length()-2));
+		}
+		else {
+			fahrenheit = Integer.parseInt(str.substring(0,str.length()-2));
+		}
+		
+		return 0;
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = null;
+		int fahrenheit = 0;
+		int celsius = 0;
+		try {
+			System.out.println("Enter a Tempretur in Celsius or Fahrenheit");
+			str = sc.next();
+			temperaturConversion(str);
+			
+			
+			if(celsius == 0) {
+				temperaturConversion(fahrenheit);
+			}else {
+				temperaturConversion(celsius);
+			}
+		} catch (Exception e) {
+			
+			
+		}
+
+	}
+
+}

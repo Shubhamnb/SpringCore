@@ -1,0 +1,36 @@
+package com.bridge.ToBinary;
+
+import java.util.Scanner;
+
+public class Binary {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int num = 0;
+		
+		
+		try {
+			System.out.print("Enter the number in Decimal :");
+			num = sc.nextInt();
+			char ar[] = ToBinary.toBinary(num);
+		
+			 char[] ch1 = new char[8];
+			
+			 for (int i = ch1.length/2-1,j = 0; i < ch1.length; i++,j++) {
+				ch1[j] = ar[i];
+			 }
+			 for (int i = ch1.length/2-1,j = 0; i < ch1.length; i++,j++) {
+					ch1[i] = ar[j];
+				 }
+			 for (char c : ch1) {
+				System.out.print(c);
+			}
+			 
+		} catch (Exception e) {
+			System.err.println("Wrong input");
+			System.exit(0);
+		}
+	}
+
+}

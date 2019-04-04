@@ -1,0 +1,5 @@
+package com.bridge.queueCalender;
+
+public class WeekDay {
+	String[] weekDay = {"Sun", "Mon", "Tue", "Wed",	"Thu", "Fri", "Sat"};
+}

@@ -1,0 +1,38 @@
+package com.bridge.MonthalyPayment;
+
+import java.util.Scanner;
+
+public class MonthalyPayment {
+	
+	public static int monthalyPayment(int P, int R, int Y) {
+		int n = 0;
+		int r = 0;
+		int result = 0;
+		n = 12 * Y;
+		r = R / (12 * 100);
+		result =  ((P * r) / (1 - Math.pow((1+r), (-n))));
+		return result;
+	}
+	
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int p = 0, y = 0, r = 0;
+		int payment = 0;
+		int result = 0;
+		try {
+			System.out.print("Enter Principal Amount :");
+			p = sc.nextInt();
+			System.out.print("Enter Interest :");
+			r = sc.nextInt();
+			System.out.print("Enter no of Year :");
+			y = sc.nextInt();
+			System.out.println(monthalyPayment(p, r, y));
+		} catch (Exception e) {
+			System.err.println("Wrong Input");
+			System.exit(0);
+		}
+
+	}
+
+}

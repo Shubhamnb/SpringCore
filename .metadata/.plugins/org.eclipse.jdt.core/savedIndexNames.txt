@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+/home/admin3/Documents/java/.metadata/.plugins/org.eclipse.jdt.core
+2744878784.index
+3223804663.index
+502732891.index
+1452410522.index
+693275836.index
+4289692011.index
+3682781006.index

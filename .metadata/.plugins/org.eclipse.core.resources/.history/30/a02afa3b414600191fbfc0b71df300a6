@@ -1,0 +1,7 @@
+package com.bridge.HarmonicNumber;
+
+public class HarmonicNumber {
+	public static void main(String[] args) {
+		
+	}
+}

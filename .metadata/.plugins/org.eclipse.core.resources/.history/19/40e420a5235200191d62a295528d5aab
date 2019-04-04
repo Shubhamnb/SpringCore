@@ -1,0 +1,38 @@
+package com.bridge.BinarySearchTree;
+
+public class BinarySearchTree {
+	Node root;
+	Node node;
+	/**********To Insert element****/
+	public void insert(int num) {
+		root = add(num, root);
+	}
+	
+	/***********To add at apropriate position*******/
+	public Node add(int num, Node nod) {
+		 
+		if(root == null) {
+			node = new Node(num, null, null);
+			return node;
+		}else {	
+			if(root.data < num) {
+				root = root.next;
+				add(num, root);
+			}else {
+				root = root.prev;
+				add(num, root);
+			}
+		}
+		return root;
+	}
+	
+	  // A utility function to do inorder traversal of BST 
+    public  void inorderRec(Node root) { 
+        if (root != null) { 
+            inorderRec(root.prev); 
+            System.out.println(root.data); 
+            inorderRec(root.next); 
+        } 
+    } 
+	
+}

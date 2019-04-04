@@ -1,0 +1,82 @@
+package com.bridge.CashCounter;
+
+import java.util.Scanner;
+
+public class CashCounTer {
+
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		BankTransaction bnk = new BankTransaction();
+		int balance = 50000, i=0, key=0;
+		Person p1 = new Person();
+		try {
+			bnk.bankDisplay();
+			key = sc.nextInt();
+			System.out.print("Enter a Number Of Person In Queue :");
+			Queue qu = new Queue(sc.nextInt());
+			while(i != 1) {
+				
+				switch (key) {
+					
+				
+					case 1:
+							System.out.print("Enter deposite Amount :");
+							bnk.deposite(sc.nextInt());
+							System.out.print("If you wont to continue Y | N :");
+							if(sc.next().charAt(0) == 'Y') {
+								bnk.bankDisplay();
+								i = 0;
+							}else {
+								System.out.println("Thanku for Banking");
+								i = 1;
+							}
+							break;
+					
+				
+				
+					case 2:
+							System.out.print("Enter withDraw Amount :");
+							bnk.withDraw(sc.nextInt());
+							System.out.print("If you wont to continue Y | N :");
+							if(sc.next().charAt(0) == 'Y') {
+								bnk.bankDisplay();
+								i = 0;
+							}else {
+								System.out.println("Thanku for Banking");
+								i = 1;
+							}
+							break;
+					
+					
+				
+					case 3:
+							bnk.viewBalance();
+							System.out.print("If you wont to continue Y | N :");
+							if(sc.next().charAt(0) == 'Y') {
+								bnk.bankDisplay();
+								i = 0;
+							}else {
+								System.out.println("Thanku for Banking");
+								i = 1;
+							}
+							break;
+					
+				
+				
+					default:
+							System.out.println("You Enter Wrong Input");
+							System.out.print("Plese Enter 1|2|3 :");
+							key = sc.nextInt();
+							i = 0;
+							break;
+				}//Switch				
+			}//while
+			
+		} catch (Exception e) {
+			System.err.println("Wrong Input ");
+			System.exit(0);
+		}
+	}
+
+}

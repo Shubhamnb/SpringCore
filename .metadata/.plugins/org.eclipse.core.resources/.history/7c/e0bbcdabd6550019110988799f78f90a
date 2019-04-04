@@ -1,0 +1,84 @@
+package com.bridge.prime;
+
+
+
+public class Prime2D {
+	
+	
+	
+	public static void main(String[] args) {
+		int cn[] = new int[10];
+		int primeNumber[] = new int[250];
+		int[][] ar = new int[10][];
+		int count = 0;
+		int k = 0;
+		int p = 0 ;
+		int rs = 100;
+		int l = 0;
+		
+		/*
+		 * Logic to count prime number and store
+		 * */
+		for(int i = 2; i <= 1000; i++) {
+			if (i == 2) {
+				primeNumber[p] = i;
+				count++;
+				p++;
+				continue;
+			}
+			for (int j = 2; j < i; j++) {
+				if(i % j == 0) {
+					break;
+				}
+				if (j == (i - 1)) {
+					primeNumber[p] = i;
+					p++;
+					count++;
+				}
+			}
+			if(i == rs) {
+				cn[k] = count;
+				count = 0;
+				k++;
+				rs = rs + 100;
+			}
+		}
+		
+		
+		
+		
+		k = 0;
+		/*For loop for inithialize 2d jagged array*/
+		for (int i = 0; i < 10; i++) {
+			ar[i] = new int[cn[i]];
+		}
+		
+		//for loop for insert a prime number in Jagged array
+		for (int i = 0; i < 10; i++) {
+			for (int j = 0; j < cn[i]; j++) {
+				ar[i][j] = primeNumber[k];
+				k++;
+			}
+		}
+		System.out.println();
+		
+		//Logic to display Jagged array
+		for (int i = 0; i < 10; i++) {
+			
+			System.out.print("["+l+" - "+(l+100)+"]   ");
+			l = l + 100;
+			for (int j = 0; j < cn[i]; j++) {
+				System.out.print("  "+ar[i][j]);
+			}
+			System.out.println();
+		}
+		/*
+		 * System.out.println(); System.out.print("Prime AnaGram Are : ");
+		 * PrimeAnagram.isAnagrame(primeNumber);
+		 */
+		
+		System.out.println();
+		System.out.print("Prime AnaGram Are : ");
+	    StackPrimeAnagrame.isAnagrameStack(primeNumber);
+	}
+}

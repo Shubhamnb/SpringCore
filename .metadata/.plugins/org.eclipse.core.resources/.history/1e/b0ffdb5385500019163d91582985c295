@@ -1,0 +1,32 @@
+package com.bridge.CashCounter;
+
+import java.util.Scanner;
+
+public class CashCounTer {
+
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		BankTransaction bnk = new BankTransaction();
+		int balance = 50000;
+		int i = 0;
+		int key = 0;
+		
+		try {
+			bnk.bankDisplay();
+			switch (key) {
+				case 1:
+					
+					break;
+
+			default:
+				break;
+			}
+				
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}

@@ -1,0 +1,26 @@
+package shubham.java;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.TreeSet;
+
+public class BinarySearch {
+	public static int binarySearch(int arr[]) {
+		for(int i=0;i<arr.length;i++) {
+			TreeSet<Integer> t = new TreeSet<Integer>();
+			t.add(arr[i]);
+		}
+		ArrayList list = new ArrayList(t);
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int arr[]= {10,52,64,75,35,95,24,16};
+		int ele = 0;
+		System.out.println("Enter a Search number");
+		ele = sc.nextInt();
+		
+	}
+
+}

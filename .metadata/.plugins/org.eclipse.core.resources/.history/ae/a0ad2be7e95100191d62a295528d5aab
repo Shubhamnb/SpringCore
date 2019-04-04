@@ -1,0 +1,8 @@
+package com.bridge.Hash;
+
+import com.bridge.OrderedList.LinkedList1;
+
+public class Hashing {
+	LinkedList1[] list = new LinkedList1[10];
+	
+}
