@@ -1,0 +1,32 @@
+package com.bridge.Stock;
+
+import java.util.Scanner;
+
+public class StockReport {
+
+	public static void main(String[] args) {
+		Stock[] stock = getStock();
+		calculateStock();
+	}
+
+	private static Stock[] getStock() {
+		Scanner sc = new Scanner(System.in);
+		int numOfStock = 0;
+		Stock[] stock = null;
+		try {
+			System.out.print("Enter a numbe of Stock :");
+			numOfStock = sc.nextInt();
+			stock = new Stock[numOfStock];
+			for (int i = 0; i < numOfStock; i++) {
+				System.out.print("Enter name, noOfShare, price of "+i+" stock :");
+				stock[i] = new Stock(sc.next(), sc.nextInt(), sc.nextInt());
+			}
+		} catch (Exception e) {
+			System.out.println("Wrong Input");
+			e.printStackTrace();
+			System.exit(0);
+		}
+		return stock;
+	}
+
+}
