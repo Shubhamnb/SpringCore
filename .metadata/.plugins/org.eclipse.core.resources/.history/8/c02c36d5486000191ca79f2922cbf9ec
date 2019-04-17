@@ -1,0 +1,25 @@
+package com.bridge.addressbook;
+
+public class Edit {
+
+	public void editCity() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void editAddress() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void editPinCode() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void editMobile() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

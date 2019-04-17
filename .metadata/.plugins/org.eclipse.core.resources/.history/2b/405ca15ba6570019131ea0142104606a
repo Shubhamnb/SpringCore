@@ -1,0 +1,56 @@
+package com.bridge.commercialdataprosessing;
+
+import java.util.ArrayList;
+
+public class StockAccountImpl implements StockAccount{
+	ArrayList<CompanyShare> list;
+	
+	
+	/********Generate getters and setters for list*****/
+	public ArrayList<CompanyShare> getList() {
+		return list;
+	}
+
+
+	public void setList(ArrayList<CompanyShare> list) {
+		this.list = list;
+	}
+
+
+	//Create a new Account from file
+	public StockAccountImpl(String fileName) {
+		
+	}
+	
+	
+	//total value of account dollers
+	public double valueOf() {
+		return 0;
+		
+	}
+	
+	
+	//add a share of a stock to account
+	public void buy(int amount, String symbol) {
+		
+	}
+	
+	//Substract share of stock from account
+	public void cell(int amount, String symbol) {
+		
+	}
+	
+	//Save Account to file
+	public void save(String fileName) {
+		
+	}
+
+	//print a detailed report of stock and value
+	@Override
+	public void printReport() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+}

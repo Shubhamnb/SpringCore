@@ -1,0 +1,31 @@
+package com.bridge.deckofcards;
+
+public class DeckOfCards {
+	public static String[][] deck = new String[4][14];
+	public static String[] suit = {"Clubs->", "Dimond->", "Hearts->", "Spades->"};
+	public static String[] rank = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
+	
+	
+	public static void main(String[] args) {
+		
+		inithialize2DArray();
+		display2DArray();
+		
+		//Display 2D Array
+		for (int i = 0; i < suit.length; i++) {
+			for (int j = 0; j < rank.length; j++) {
+					System.out.print(deck[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+
+	//Inithialize 2D Array
+	private static void inithialize2DArray() {
+		for (int i = 0; i < suit.length; i++) {
+			for (int j = 0; j < rank.length; j++) {
+				deck[i][j] = suit[i] + rank[j];
+			}
+		}
+	}
+}

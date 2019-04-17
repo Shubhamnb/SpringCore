@@ -1,0 +1,58 @@
+package com.bridge.commercialdataprosessing;
+
+public class CompanyShare {
+	String stockSymbol;
+	String stockName;
+	int noOfShare;
+	int sharePrice;
+	
+	
+	public CompanyShare(String stockSymbol, String stockName, int noOfShare, int sharePrice) {
+		this.stockSymbol = stockSymbol;
+		this.stockName = stockName;
+		this.noOfShare = noOfShare;
+		this.sharePrice = sharePrice;
+	}
+
+
+	public String getStockSymbol() {
+		return stockSymbol;
+	}
+
+
+	public void setStockSymbol(String stockSymbol) {
+		this.stockSymbol = stockSymbol;
+	}
+
+
+	public String getStockName() {
+		return stockName;
+	}
+
+
+	public void setStockName(String stockName) {
+		this.stockName = stockName;
+	}
+
+
+	public int getNoOfShare() {
+		return noOfShare;
+	}
+
+
+	public void setNoOfShare(int noOfShare) {
+		this.noOfShare = noOfShare;
+	}
+
+
+	public int getSharePrice() {
+		return sharePrice;
+	}
+
+
+	public void setSharePrice(int sharePrice) {
+		this.sharePrice = sharePrice;
+	}
+	
+	
+}

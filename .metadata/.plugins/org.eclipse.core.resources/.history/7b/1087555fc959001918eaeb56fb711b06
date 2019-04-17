@@ -1,0 +1,9 @@
+package com.bridge.commercialdataprosessing;
+
+public interface StockAccount {
+	double valueOf();
+	void buy(int amount, String symbol);
+	void cell(int amount, String symbol);
+	void save(String fileName);
+	void printReport();
+}

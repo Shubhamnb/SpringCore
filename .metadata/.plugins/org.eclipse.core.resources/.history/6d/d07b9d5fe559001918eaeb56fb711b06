@@ -1,0 +1,43 @@
+package com.bridge.commercialdataprosessing;
+
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+public class CommercialStockMethods {
+	Scanner sc = new Scanner(System.in);
+	
+	private String companyFilePath = "companyStock.json";
+	private String userFilePath = "userStock.json";
+	
+	private CommercialCompanyProj companyProj = new CommercialCompanyProj();
+	
+	JSONManagement jsonManagement = new JSONManagement();
+	
+	public void addDetails() throws Exception {
+		System.out.println("Enter Whose details you want to add\n1.Company Stock\t2.User Deatils");
+		int choice = sc.nextInt();
+		switch (choice) {
+		case 1:
+			addStockDetails();
+			break;
+		case 2:
+			addUser();
+			break;
+		default:
+			System.err.println("Invalid choice...!!!");
+			System.out.println("Do you want to enter again...(Y/N)");
+			char ch = sc.next().charAt(0);
+			if (ch == 'Y' || ch == 'y')
+				addDetails();
+		}
+	}
+
+}

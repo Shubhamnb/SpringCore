@@ -1,9 +1,0 @@
-package com.bridge.RegularExpression;
-
-import java.util.regex.Matcher;
-
-public class RegularExpression {
-	public static void main(String[] args) {
-		String str = "";
-	}
-}

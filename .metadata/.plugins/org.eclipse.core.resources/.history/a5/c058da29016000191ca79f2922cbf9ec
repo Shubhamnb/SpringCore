@@ -1,0 +1,19 @@
+package com.bridge.addressbook;
+
+public class JsonReadWrite {
+	Object mapper;
+	/*0-param Constructor*/
+	public JsonReadWrite() {
+	}
+
+	/* Constructor Using Field */
+	public JsonReadWrite(Object mapper) {
+		this.mapper = mapper;
+	}
+
+	/* Methode to write Java Object to json */
+	public void writeFile(Person person) {
+		
+	}
+	
+}

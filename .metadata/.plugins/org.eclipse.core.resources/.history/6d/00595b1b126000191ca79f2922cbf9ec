@@ -1,0 +1,26 @@
+package com.practice.json;
+
+public class ObjectMapperAddRemove {
+
+	public static void main(String[] args) {
+
+byte[] jsonData = Files.readAllBytes(Paths.get("employee.txt"));
+
+ObjectMapper objectMapper = new ObjectMapper();
+
+//create JsonNode
+JsonNode rootNode = objectMapper.readTree(jsonData);
+
+//update JSON data
+((ObjectNode) rootNode).put("id", 500);
+//add new key value
+((ObjectNode) rootNode).put("test", "test value");
+//remove existing key
+((ObjectNode) rootNode).remove("role");
+((ObjectNode) rootNode).remove("properties");
+objectMapper.writeValue(new File("updated_emp.txt"), rootNode);
+
+
+	}
+
+}

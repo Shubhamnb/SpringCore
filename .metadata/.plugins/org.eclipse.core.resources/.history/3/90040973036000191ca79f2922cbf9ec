@@ -1,0 +1,22 @@
+package com.bridge.addressbook;
+
+import java.util.Scanner;
+
+public class AdrresBookMain {
+	static Scanner sc;
+	static {
+		sc = new Scanner(System.in);
+	}
+	public static void main(String[] args) {
+		 Person[] person = getPerson();
+	}
+	private static Person[] getPerson() {
+		System.out.print("Enter no of person : ");
+		int num = sc.nextInt();
+		for (int i = 0; i < num; i++) {
+			System.out.print("Enter "+(i+1)+" Person First Name : ");
+		}
+		return null;
+	}
+
+}

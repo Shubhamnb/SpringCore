@@ -1,0 +1,61 @@
+package com.bridge.LinkedListComDataPro;
+
+public class CompanyStock {
+	private String StockName;
+	private String stockSymbol;
+	private String noOFShare;
+	private String sharePrice;
+
+	
+	
+	public CompanyStock() {
+	}
+
+	public CompanyStock(String stockName, String stockSymbol, String noOFShare, String sharePrice) {
+		this.StockName = stockName;
+		this.stockSymbol = stockSymbol;
+		this.noOFShare = noOFShare;
+		this.sharePrice = sharePrice;
+	}
+
+	public String getStockName() {
+		return StockName;
+	}
+
+	public void setStockName(String stockName) {
+		this.StockName = stockName;
+	}
+
+	public String getStockSymbol() {
+		return stockSymbol;
+	}
+
+	public void setStockSymbol(String stockSymbol) {
+		this.stockSymbol = stockSymbol;
+	}
+
+	public String getNoOFShare() {
+		return noOFShare;
+	}
+
+	public void setNoOFShare(String noOFShare) {
+		this.noOFShare = noOFShare;
+	}
+
+	public String getSharePrice() {
+		return sharePrice;
+	}
+
+	public void setSharePrice(String sharePrice) {
+		this.sharePrice = sharePrice;
+	}
+
+	@Override
+	public String toString() {
+		return "CompanyStock [stockName=" + StockName + ", stockSymbol=" + stockSymbol + ", noOFShare=" + noOFShare
+				+ ", sharePrice=" + sharePrice + "]";
+	}
+
+	
+	
+}

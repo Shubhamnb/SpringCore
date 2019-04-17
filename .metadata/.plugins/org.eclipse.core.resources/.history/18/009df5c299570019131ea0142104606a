@@ -1,0 +1,16 @@
+package com.bridge.commercialdataprosessing;
+
+import java.util.Scanner;
+
+public class ComeercialDataProcessing {
+
+	public static void main(String[] args) {
+		Scanner sc  = new Scanner(System.in); 
+		try {
+			getInput();
+		} catch (Exception e) {
+			
+		}
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.bridge.addressbook;
+
+public class AddressBook {
+	Person[] persons;
+	int noOfPerson;
+	
+}

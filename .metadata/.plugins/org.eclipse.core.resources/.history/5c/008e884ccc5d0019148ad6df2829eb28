@@ -1,0 +1,6 @@
+package com.bridge.JSON;
+
+public class Car {
+	String name;
+	int value;
+}

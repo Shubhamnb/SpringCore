@@ -18,7 +18,8 @@ public class BinarySearchTreeDemo {
 			}
 			bst.inorder();
 		} catch (Exception e) {
-			
+			System.err.println("Wrong Input");
+			System.exit(0);
 		}
 	}
 

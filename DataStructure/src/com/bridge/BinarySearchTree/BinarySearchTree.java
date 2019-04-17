@@ -1,5 +1,8 @@
 package com.bridge.BinarySearchTree;
-
+/*
+ * @author : Shubham BOhari
+ * 
+ * */
 public class BinarySearchTree {
 	Node root;
 	Node node;

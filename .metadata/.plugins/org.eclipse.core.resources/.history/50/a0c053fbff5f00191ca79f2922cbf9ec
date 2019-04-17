@@ -1,0 +1,21 @@
+package com.bridge.addressbook;
+
+public class AddressBook {
+	Person[] persons;
+	int noOfPerson;
+	public Person[] getPersons() {
+		return persons;
+	}
+	public void setPersons(Person[] persons) {
+		this.persons = persons;
+	}
+	public int getNoOfPerson() {
+		return noOfPerson;
+	}
+	public void setNoOfPerson(int noOfPerson) {
+		this.noOfPerson = noOfPerson;
+	}
+	
+	
+	
+}

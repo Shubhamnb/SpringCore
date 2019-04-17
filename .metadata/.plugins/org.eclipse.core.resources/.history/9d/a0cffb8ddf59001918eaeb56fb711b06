@@ -1,0 +1,29 @@
+package com.bridge.commercialdataprosessing;
+
+import java.io.File;
+import java.io.FileReader;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+public class JSONManagement {
+	
+	private String companyFilePath = "companyStock.json";
+	private String userFilePath = "userStock.json";
+	
+	@SuppressWarnings("unchecked")
+	public void createUserJsonObj(CommercialUserProj userProj, File file) throws Exception {
+		JSONParser parser = new JSONParser();
+		JSONObject jsonObj = (JSONObject) parser.parse(new FileReader(file));
+		JSONArray jsonArray = (JSONArray) jsonObj.get("UserDetails");
+		JSONObject simple = new JSONObject();
+		simple.put("UserName", userProj.getUserName());
+		simple.put("NoOfShare", userProj.getNoOfShares());
+		simple.put("SharePrice", userProj.getPrice());
+		jsonArray.add(simple);
+		jsonObj.put("UserDetails", jsonArray);
+		System.out.println(jsonObj);
+		writeIntoFile(jsonObj, userFilePath);
+	}
+}

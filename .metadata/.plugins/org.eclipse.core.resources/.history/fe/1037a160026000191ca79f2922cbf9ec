@@ -1,0 +1,11 @@
+package com.bridge.addressbook;
+
+import java.util.Scanner;
+
+public class AdrresBookMain {
+	Scanner sc;
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	}
+
+}

@@ -1,0 +1,37 @@
+package com.bridge.deckcard.linklist;
+
+public class LinkList {
+private LinkedListNode<T> first = null;
+	
+	/**
+	 * Insert at the front of the list
+	 * @param node
+	 */
+	public void insert(LinkedListNode<T> node) {
+		node.setNext(first);
+		first = node;
+	}
+
+	/**
+	 * Remove from the front of the list
+	 * @param node
+	 */
+	public void remove(){
+		if(first.getNext()!=null)
+			first = first.getNext();
+		else first = null;
+	}
+	
+	/**
+	 * Recursively traverse this list and print the node value
+	 * @param node
+	 */
+	private void printList(LinkedListNode<T> node) {
+		System.out.println("Node is " + node.getValue());
+		if(node.getNext()!=null) printList(node.getNext());
+	}
+
+	public void print(){
+		printList(first);
+}
+}

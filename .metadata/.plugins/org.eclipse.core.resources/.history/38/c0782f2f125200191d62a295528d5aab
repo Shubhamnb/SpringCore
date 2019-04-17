@@ -1,8 +1,0 @@
-package com.bridge.BinarySearchTree;
-
-public class Node {
-	int data;
-	Node prev, next;
-	
-	
-}

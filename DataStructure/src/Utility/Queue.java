@@ -55,6 +55,20 @@ public class Queue<T> {
 		return (String) temp.data;
 	
 	}
+	
+	public int dequeInt()
+	{
+		Node temp=head;
+		if(length == 0)  //if queue is empty
+		{
+			System.out.println("No element present in List");
+			return 0;
+		}
+		head = head.next;  //else shift head to next node
+		length--;
+		return  (int) temp.data;
+	
+	}
 
 	//check queue is empty or not
 

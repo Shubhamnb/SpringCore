@@ -1,0 +1,52 @@
+{
+	"StockDetails": [
+		{
+			"SharePrice": 640,
+			"StockName": "Google",
+			"StockSymbol": "G",
+			"NoOfShare": 54
+		},
+		{
+			"SharePrice": 349,
+			"StockName": "HDFC",
+			"StockSymbol": "H",
+			"NoOfShare": 25
+		},
+		{
+			"SharePrice": 1190,
+			"StockName": "Infosys",
+			"StockSymbol": "$",
+			"NoOfShare": 51
+		},
+		{
+			"SharePrice": 650,
+			"StockName": "Microsoft",
+			"StockSymbol": "^",
+			"NoOfShare": 40
+		},
+		{
+			"SharePrice": "300",
+			"StockName": "BridgeLabz",
+			"StockSymbol": "BL",
+			"NoOfShare": "500"
+		},
+		{
+			"SharePrice": "2300",
+			"StockName": "Yatra'",
+			"StockSymbol": "YY",
+			"NoOfShare": "50"
+		},
+		{
+			"SharePrice": "20",
+			"StockName": "Google",
+			"StockSymbol": "G",
+			"NoOfShare": "1"
+		},
+		{
+			"SharePrice": "540",
+			"StockName": "Maruti",
+			"StockSymbol": "MS",
+			"NoOfShare": "60"
+		}
+	]
+}

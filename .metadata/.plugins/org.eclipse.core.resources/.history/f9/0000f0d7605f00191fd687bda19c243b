@@ -1,0 +1,7 @@
+package com.bridge.deckofcards;
+
+public class Players {
+	String[] playerCards = new String[9];
+	
+	
+}

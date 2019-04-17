@@ -39,6 +39,7 @@ public class Hashing {
 	/*****METHODE TO SEARCH HASH ELEMENT*******/
 	public boolean search(int num) {
 		 int mod = num % 11;
+		 
 		 if(list[mod].search(num))
 			 return true;
 		return false;

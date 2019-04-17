@@ -13,10 +13,11 @@ public class CouponNumber {
 		Set set = new HashSet();
 		int ranNumber = 0;
 		
-		for (int i = 0; i < num; i++) {
+		while(set.size() != 100) {
 			ranNumber = ran.nextInt(100);
 			set.add(ranNumber);
 		}
+		
 		System.out.println(set);
 	}
 

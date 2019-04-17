@@ -1,0 +1,5 @@
+package com.bridge.addressbook;
+
+public class Person {
+	public String fName;
+}

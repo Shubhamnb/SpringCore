@@ -1,0 +1,24 @@
+package Utility;
+
+import com.bridge.commercialdataprosessing.CommercialCompanyProj;
+
+public class Node {
+	CommercialCompanyProj comShareProject;
+	Node next;
+	
+	
+	public Node(CommercialCompanyProj comShareProject, Node next) {
+		this.comShareProject = comShareProject;
+		this.next = next;
+	}
+	/*******************Gettter and Setter********************/
+	
+	public Node getNext() {
+		return next;
+	}
+	
+	public void setNext(Node next) {
+		this.next = next;
+	}
+	
+}

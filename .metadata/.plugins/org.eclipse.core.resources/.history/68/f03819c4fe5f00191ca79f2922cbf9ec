@@ -1,0 +1,10 @@
+package com.bridge.addressbook;
+
+public class Person {
+	public String fName;
+	public String lName;
+	public String address;
+	public String city;
+	public int pinCode;
+	public int moNumber;
+}

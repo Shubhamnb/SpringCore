@@ -43,7 +43,12 @@ public class LinkedList1 {
 				p2 = p1.next;
 				// System.out.println("SHubham");
 				while (p1.next != null) {
-
+					
+					if (p1.data > node.data && p1 == head) {
+						node.next = head;
+						head = node;
+					}
+					
 					if (p1.data < node.data && p2.data > node.data) {
 						node.next = p1.next;
 						p1.next = node;
@@ -125,12 +130,15 @@ public class LinkedList1 {
 	 */
 	public boolean search(int num) {
 		Node temp = head;
-		do {
+		if (head == null) {
+			return false;
+		}
+		while (temp.next != null){
 			if (temp.data == num) {
 				return true;
 			}
 			temp = temp.next;
-		} while (temp.next != null);
+		} 
 		if (temp.data == num) {
 			return true;
 		}

@@ -1,0 +1,10 @@
+package com.bridge.JSON;
+
+public class ObjectMapperInventeryManagement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

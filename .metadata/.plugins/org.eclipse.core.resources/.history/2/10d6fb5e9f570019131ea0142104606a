@@ -1,0 +1,41 @@
+package com.bridge.commercialdataprosessing;
+
+import java.util.Scanner;
+
+import org.json.simple.parser.JSONParser;
+
+public class ComeercialDataProcessing {
+
+	public static void main(String[] args) {
+		Scanner sc  = new Scanner(System.in);
+		CompanyShare[] companyShare;
+		UserStockDetails[] userStockDetails;
+		try {
+			askGetInput();
+			convertJsonFileToObject();
+		} catch (Exception e) {
+			
+		}
+	}
+
+	private static void convertJsonFileToObject() {
+		JSONParser parser = new JSONParser();
+		
+	}
+
+	private static void askGetInput() {
+		System.out.println("                     Welcome TO Stock Market  ");
+		System.out.println("                     -----------------------  ");
+		System.out.println("**********What you wont to do*************");
+		System.out.println();
+		displayUi();
+	}
+
+	private static void displayUi() {
+		
+		
+	}
+	
+	
+	
+}

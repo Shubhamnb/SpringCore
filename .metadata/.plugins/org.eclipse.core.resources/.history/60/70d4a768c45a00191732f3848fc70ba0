@@ -1,0 +1,12 @@
+package Utility;
+
+import com.bridge.commercialdataprosessing.CommercialUserProj;
+
+public class NodeUser {
+	CommercialUserProj userShareProject;
+	NodeUser next;
+	
+	public NodeUser() {
+		// TODO Auto-generated constructor stub
+	}
+}

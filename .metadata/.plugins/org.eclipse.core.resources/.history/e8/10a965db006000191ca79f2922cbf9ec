@@ -1,0 +1,9 @@
+package com.bridge.addressbook;
+
+public class JsonReadWrite {
+	Object mapper;
+	public void writeFile(Person person) {
+		
+	}
+	
+}

@@ -1,0 +1,6 @@
+package com.bridge.commercialdataprosessing;
+
+public class CompanyShare {
+	String stockSymbol;
+	int noOfShare;
+}

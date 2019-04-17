@@ -1,0 +1,12 @@
+package com.bridge.addressbook;
+
+import java.util.Scanner;
+
+public class AddressBook {
+	Scanner sc;
+	public AddressBook() {
+		// TODO Auto-generated constructor stub
+	} {
+		sc = new Scanner(System.in);
+	}
+}

@@ -1,0 +1,25 @@
+package com.bridge.commercialdataprosessing;
+
+public class CommercialStockMethods {
+
+	public void addDetails() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void buyStock() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void sellStock() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void printReport() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

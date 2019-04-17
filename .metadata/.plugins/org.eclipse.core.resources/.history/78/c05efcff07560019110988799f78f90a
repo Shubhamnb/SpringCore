@@ -1,9 +1,0 @@
-package com.bridge.JSON;
-
-
-
-
-public class JSONInventeryManagement {
-	ObjectMapper om = new ObjectMapper();
-	
-}

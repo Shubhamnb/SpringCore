@@ -1,0 +1,17 @@
+package Utility;
+
+import com.bridge.LinkedListComDataPro.CompanyStock;
+
+public class NodeStock {
+	
+	CompanyStock companyStock;
+	NodeStock next;
+	
+	
+	public NodeStock(CompanyStock companyStock, NodeStock next) {
+		this.companyStock = companyStock;
+		this.next = next;
+	}
+	
+
+}

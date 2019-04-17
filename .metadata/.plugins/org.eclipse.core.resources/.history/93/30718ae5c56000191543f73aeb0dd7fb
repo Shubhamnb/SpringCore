@@ -1,0 +1,44 @@
+package com.bridge.addressbook;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+import org.codehaus.jackson.JsonNode;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.node.ObjectNode;
+
+public class Edit {
+
+	public void editCity(String name) throws IOException {
+		
+		JsonReadWrite json = new JsonReadWrite();
+		ObjectMapper objectMapper = new ObjectMapper();
+		Person[] person = json.readFile();
+		
+		for (int i = 0; i < person.length; i++) {
+			person[i].getlName();
+		}
+		
+		
+		
+	
+	}
+
+	public void editAddress() {
+		
+		
+	}
+
+	public void editPinCode() {
+		
+		
+	}
+
+	public void editMobile() {
+		
+		
+	}
+	
+}

@@ -1,8 +1,0 @@
-package com.bridge.JSON;
-
-import org.codehaus.jackson.map.ObjectMapper;
-
-public class JSONInventeryManagement {
-	ObjectMapper om = new ObjectMapper();
-	
-}

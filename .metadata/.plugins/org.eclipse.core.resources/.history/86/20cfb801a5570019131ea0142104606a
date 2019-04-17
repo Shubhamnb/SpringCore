@@ -1,0 +1,77 @@
+package com.bridge.commercialdataprosessing;
+
+import java.util.Scanner;
+
+import org.codehaus.jackson.map.ser.std.StaticListSerializerBase;
+import org.json.simple.parser.JSONParser;
+
+public class ComeercialDataProcessing {
+	
+	
+	
+	public static Scanner sc;
+	public static void main(String[] args) {
+		sc  = new Scanner(System.in);
+		CompanyShare[] companyShare = null;
+		UserStockDetails[] userStockDetails = null;
+		
+		
+		try {
+			companyShare = convertJsonFileToObject(companyShare);
+			userStockDetails = convertJsonFileToObject(userStockDetails);
+			askGetInput();
+		} catch (Exception e) {
+			
+		}
+	}
+	//Convert Json To Java Object
+	private static CompanyShare[] convertJsonFileToObject(CompanyShare[] companyShare) {
+		JSONParser parser = new JSONParser();
+		return companyShare;
+		
+	}
+	
+	//Convert Json To Java Object
+	private static UserStockDetails[] convertJsonFileToObject(UserStockDetails[] userStockDetails) {
+		JSONParser parser = new JSONParser();
+		return userStockDetails;
+		
+	}
+	
+	private static void askGetInput() {
+		int i = 1;
+		System.out.println("                     Welcome TO Stock Market  ");
+		System.out.println("                     -----------------------  ");
+		System.out.println("**********What you wont to do*************");
+		System.out.println();
+		displayUi();
+		int key = sc.nextInt();
+		while(i != 0) {
+			switch (key) {
+			case 1:
+				
+				break;
+			case 2:
+				
+				break;
+			case 3:
+				
+				break;
+				
+			default:
+				break;
+			}
+		}
+	}
+
+	private static void displayUi() {
+		System.out.println("  1 . Add");
+		System.out.println("  2 . Buy");
+		System.out.println("  3 . Cell");
+		System.out.println("  4 . Print Report");
+		System.out.println("  5 . Exit");
+	}
+	
+	
+	
+}

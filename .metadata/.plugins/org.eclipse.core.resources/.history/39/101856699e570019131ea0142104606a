@@ -1,0 +1,8 @@
+package com.bridge.commercialdataprosessing;
+
+public class UserStockDetails {
+	String name;
+	int sharePrice;
+	int noOfShare;
+	
+}

@@ -1,5 +1,0 @@
-package com.bridge.queueCalender;
-
-public class Week {
-	WeekDay[] week = new WeekDay[7];
-}

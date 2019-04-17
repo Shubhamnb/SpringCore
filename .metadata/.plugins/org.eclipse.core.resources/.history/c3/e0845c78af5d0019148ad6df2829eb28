@@ -1,0 +1,10 @@
+package com.bridge.generics;
+
+public class  SuperSort<T> {
+	T value;
+	
+	public <T>  bubbleSort(T num) {
+		Integer[] i = new Integer[90];
+		return i;
+	}
+}

@@ -1,0 +1,26 @@
+package shubham.java;
+
+public class GenericsDemo {
+
+	public static void main(String[] args) {
+		String str[] = {"Shubham","shdb","gdbhd","dkjior"};
+		int arr[] = {10,20,30,40,50,60,70,80,33,22,65};
+		Integer[] in = {10,20,30,40,50,60,70,80,33,22,65};
+		bubbleSort(in);
+
+	}
+	public static <T> void bubbleSort(T[] inputArray) {
+		T[] num =  inputArray;
+		for (int i = 0; i < inputArray.length; i++) {
+			
+		}
+		
+		for(int i = 0; i < inputArray.length; i++) {
+			for (int j = 1; j < (inputArray.length - 1); j++) {
+				if(num[j] > num[j+1]) {
+					
+				}
+			}
+		}
+	}
+}

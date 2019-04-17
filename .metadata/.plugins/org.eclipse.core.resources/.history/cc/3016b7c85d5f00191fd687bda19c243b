@@ -1,0 +1,8 @@
+package com.bridge.deckofcards;
+
+public class DeckOfCards {
+	public static void main(String[] args) {
+		int[][] deck = new int[4][12];
+		String[] suit = {"Clubs", "Dimond", "Hearts", "Spades"};
+	}
+}

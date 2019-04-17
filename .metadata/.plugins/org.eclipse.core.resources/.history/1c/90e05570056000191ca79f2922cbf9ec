@@ -1,0 +1,46 @@
+package com.bridge.addressbook;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.map.JsonMappingException;
+
+public class AdrresBookMain {
+	static Scanner sc;
+	static {
+		sc = new Scanner(System.in);
+	}
+	public static void main(String[] args) throws JsonGenerationException, JsonMappingException, IOException {
+		 Person[] person = getPerson();
+		 JsonReadWrite jsonReadWrite = new JsonReadWrite();
+		 jsonReadWrite.writeFile(person);
+	}
+	private static Person[] getPerson() {
+		System.out.print("Enter no of person : ");
+		int num = sc.nextInt();
+		Person[] person = new Person[num];
+		for (int i = 0; i < num; i++) {
+			person[i] = new Person();
+			System.out.println("====== Enter "+(i+1)+" Person Details ======");
+			
+			System.out.print("Enter "+(i+1)+" Person First Name     : ");
+			person[i].setfName(sc.next());
+			System.out.print("Enter "+(i+1)+" Person Last Name      : ");
+			person[i].setlName(sc.next());
+			System.out.print("Enter "+(i+1)+" Person City           : ");
+			person[i].setCity(sc.next());
+			System.out.print("Enter "+(i+1)+" Person Address        : ");
+			person[i].setAddress(sc.next());
+			System.out.print("Enter "+(i+1)+" Person PinCode        : ");
+			person[i].setPinCode(sc.nextInt());
+			System.out.print("Enter "+(i+1)+" Person Contact Number : ");
+			person[i].setAddress(sc.next());
+			
+			System.out.println();
+			System.out.println();
+		}
+		return person;
+	}
+
+}

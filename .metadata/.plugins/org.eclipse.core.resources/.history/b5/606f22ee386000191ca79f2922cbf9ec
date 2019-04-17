@@ -1,0 +1,10 @@
+package com.bridge.addressbook;
+
+import java.util.Scanner;
+
+public class AddressBook {
+	static Scanner sc;
+	static {
+		sc = new Scanner(System.in);
+	}
+}

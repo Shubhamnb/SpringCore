@@ -1,0 +1,45 @@
+package com.bridge.commercialdataprosessing;
+
+public class UserStockDetails {
+	String name;
+	int sharePrice;
+	int noOfShare;
+	
+	//Constructor Using Field
+	public UserStockDetails(String name, int sharePrice, int noOfShare) {
+		this.name = name;
+		this.sharePrice = sharePrice;
+		this.noOfShare = noOfShare;
+	}
+
+	//Getters and Setters
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public int getSharePrice() {
+		return sharePrice;
+	}
+
+
+	public void setSharePrice(int sharePrice) {
+		this.sharePrice = sharePrice;
+	}
+
+
+	public int getNoOfShare() {
+		return noOfShare;
+	}
+
+
+	public void setNoOfShare(int noOfShare) {
+		this.noOfShare = noOfShare;
+	}
+	
+}

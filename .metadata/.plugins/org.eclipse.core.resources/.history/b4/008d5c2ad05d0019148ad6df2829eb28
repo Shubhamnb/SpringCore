@@ -1,0 +1,33 @@
+package com.bridge.JSON;
+
+public class Car {
+	String name;
+	long value;
+	
+	
+	
+	public Car(String name, long value) {
+		this.name = name;
+		this.value = value;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public long getValue() {
+		return value;
+	}
+	public void setValue(long value) {
+		this.value = value;
+	}
+
+	@Override
+	public String toString() {
+		return "Car [name=" + name + ", value=" + value + "]";
+	}
+	
+	
+}
