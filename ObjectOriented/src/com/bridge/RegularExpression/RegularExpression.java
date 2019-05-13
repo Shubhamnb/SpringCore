@@ -2,8 +2,6 @@ package com.bridge.RegularExpression;
 
 
 import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -76,7 +74,7 @@ public class RegularExpression {
 			  
 			  
 			  System.out.println(sb.toString());
-			  
+			  sc.close();
 			  
 		} catch (Exception e) {
 			System.out.println("Wrong Input ");

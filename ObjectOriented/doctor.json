@@ -1,0 +1,13 @@
+[{
+	"id": 102,
+	"name": "Rahul",
+	"specility": "ChildSpecialist",
+	"availablity": "AM"
+},
+{
+	"id": 103,
+	"name": "Shubham",
+	"specility": "HartSpecialist",
+	"availablity": "PM"
+}
+]

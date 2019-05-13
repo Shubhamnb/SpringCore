@@ -9,7 +9,6 @@
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.sql.Time"/>
 <fullyQualifiedTypeName name="java.util.Timer"/>
-<fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="com.bridge.utility.Utility"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
@@ -25,9 +24,24 @@
 <fullyQualifiedTypeName name="com.bridge.CashCounter.Person"/>
 <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
 <fullyQualifiedTypeName name="com.bridge.PalandromeChecker.DeQueue"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="com.bridge.Hash.Hashing"/>
+<fullyQualifiedTypeName name="com.bridge.addressbook.JsonReadWrite"/>
+<fullyQualifiedTypeName name="com.bridge.addressbook.Person"/>
+<fullyQualifiedTypeName name="com.bridge.clinicmanagement.DoctorManagement"/>
+<fullyQualifiedTypeName name="com.bridge.clinicmanagement.PatientManagement"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.bridge.clinicmanagement.JsonReadWrite"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="com.bridge.clinicmanagement.Patients"/>
+<fullyQualifiedTypeName name="com.bridge.clinicmanagement.Doctor"/>
+<fullyQualifiedTypeName name="com.bridge.clinicmanagement.Patient_Doctor"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="com.bridge.pojo.Student"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
 </qualifiedTypeNameHistroy>

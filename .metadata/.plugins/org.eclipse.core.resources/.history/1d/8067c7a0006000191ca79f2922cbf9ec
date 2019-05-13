@@ -1,9 +1,0 @@
-package com.bridge.addressbook;
-
-public class JsonReadWrite {
-	
-	public void name(Person person) {
-		
-	}
-	
-}

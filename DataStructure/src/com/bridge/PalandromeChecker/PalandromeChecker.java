@@ -18,6 +18,7 @@ public class PalandromeChecker {
 			for (int i = 0; i < str.length()/2; i++) {
 				if(dq.frontDequeue() != dq.rearDeQueue()) {
 					flag = true;
+					break;
 				}
 			}
 			

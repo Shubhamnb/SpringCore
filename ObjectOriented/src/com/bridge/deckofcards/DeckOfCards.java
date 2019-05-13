@@ -129,12 +129,12 @@ public class DeckOfCards {
 		Random ran = new Random();
 		for (int i = 0; i < 26; i++) {
 			int num = ran.nextInt(52);
-			for (int j = 0; j < rank.length; j++) {
+			
 				String temp;
 				temp = shuffelCardsArray[num];
-				shuffelCardsArray[num] = shuffelCardsArray[j];
-				shuffelCardsArray[j] = temp;
-			}
+				shuffelCardsArray[num] = shuffelCardsArray[i];
+				shuffelCardsArray[i] = temp;
+			
 		}
 	}
 	

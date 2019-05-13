@@ -1,9 +1,0 @@
-package com.bridge.generics;
-
-public class  SuperSort<T> {
-	T value;
-	
-	public <T> void bubbleSort(T num) {
-		return T[];
-	}
-}

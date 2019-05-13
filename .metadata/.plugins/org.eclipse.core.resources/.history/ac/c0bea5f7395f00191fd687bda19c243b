@@ -1,7 +1,0 @@
-package com.bridge.JSON;
-
-public class myPojo {
-	int id;
-	String name;
-	String tags[];
-}

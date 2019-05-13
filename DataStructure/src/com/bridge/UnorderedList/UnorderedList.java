@@ -24,6 +24,8 @@ public class UnorderedList {
 			str1 = sc1.next();
 			if(list.search(str1)) {
 				list.remove(str1);
+			}else {
+				list.add(str1);
 			}
 			System.out.println();
 			list.show();

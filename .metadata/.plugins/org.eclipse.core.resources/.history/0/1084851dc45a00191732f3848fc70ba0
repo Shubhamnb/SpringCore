@@ -1,7 +1,0 @@
-package Utility;
-
-import com.bridge.commercialdataprosessing.CommercialCompanyProj;
-
-public class NodeUser {
-	CommercialUserProj comShareProject;
-}

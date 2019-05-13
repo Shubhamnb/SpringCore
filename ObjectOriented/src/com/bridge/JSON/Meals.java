@@ -1,9 +1,9 @@
 package com.bridge.JSON;
 
 public class Meals {
-	public String name;
-	public int price;
-	public int weight;
+	private String name;
+	private int price;
+	private int weight;
 	
 	public Meals() {	
 	}
@@ -29,6 +29,10 @@ public class Meals {
 	}
 	public void setWeight(int weight) {
 		this.weight = weight;
+	}
+	@Override
+	public String toString() {
+		return "[name=" + name + ", price=" + price + ", weight=" + weight + "]";
 	}
 	
 	
