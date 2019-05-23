@@ -28,7 +28,7 @@ public class Calender2DArray {
 
 		for (int i = 0; i < calender.length; i++) {
 			for (int j = 0; j < calender[i].length; j++) {
-				if (calender[i][j] < 0 || calender[i][j] > month[m - 1]) {
+				if (calender[i][j] < 0 || calender[i][j] > month[m   - 1]) {
 					System.out.print("\t ");
 				} else if (calender[i][j] > 0) {
 					System.out.print("\t" + calender[i][j] + " ");
@@ -40,7 +40,7 @@ public class Calender2DArray {
 
 	static void putCalender(int d) {
 		int d1 = 1;
-		//System.out.println(d);
+		//System.out.println(calender.length);
 		for (int i = d; i < calender[0].length; i++) {
 			// System.out.print(d1);
 			calender[0][i] = d1++;

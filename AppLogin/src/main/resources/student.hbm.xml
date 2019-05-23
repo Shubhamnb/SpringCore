@@ -6,7 +6,7 @@
           <id name="userName">  
           <generator class="assigned"></generator>  
           </id>  
-          <property name="fName" ></property>  
+          <property name="fName"></property>  
           <property name="passWord"></property>
           <property name="dob"></property>
           <property name="lName"></property>

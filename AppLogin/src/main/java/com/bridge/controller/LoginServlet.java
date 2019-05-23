@@ -23,8 +23,7 @@ public class LoginServlet extends HttpServlet{
 		res.setContentType("text/html");
 		String userName = req.getParameter("userName");
 		String passWord = req.getParameter("passWord");
-		System.out.println(userName);
-		System.out.println("SHubham");
+		
 		boolean result = dao.validate(userName, passWord);
 		if (result == true) {
 			req.setAttribute("msg", userName);

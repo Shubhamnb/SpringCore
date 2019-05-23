@@ -10,6 +10,7 @@ import com.bridge.pojo.Student;
 public class Dao {
 	SessionFactory factory;
 	Session session;
+	@SuppressWarnings("deprecation")
 	public Dao() {
 		 factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory(); 
 	}
